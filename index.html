@@ -66,9 +66,7 @@
     <!-- Navbar (sit on top) -->
         <div class="w3-top">
             <div class="w3-bar" id="myNavbar">
-                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </a>
+
                 <a href="#home" class="w3-bar-item">
                     <div style="width: 30%; padding: 10px;" >
                         <img src="images/logo.png" width= "100%">
@@ -76,10 +74,7 @@
                 </a>
             </div>
 
-            <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            </div>
+
         </div>
 
     <!-- First Parallax Image with Logo Text -->
@@ -226,37 +221,37 @@
 
     <!-- Container (Contact Section) -->
         <div class="w3-content w3-container w3-padding-32" id="contact">
-            <div class="w3-center" style="padding: 50px;">
+            <div class="w3-center w3-padding-64">
                 <div class="w3-center w3-padding-64">
                     <div class="w3-center w3-padding-64">
-                        <div class="w3-center w3-padding-64">
-                            <img src="images/logo.png" class="w3-padding-32">
-                            <p class="w3-center" style="font-size: 20px">
-                                A card game to land your chimps on mars.
-                                <br>
-                                <b> Onboard with the mission?</b> Give us a heads-up!
-                            </p>
-                            <form class="w3-wide w3-center" target="_blank" action="https://formsubmit.co/chimpsonmarsgame@gmail.com" method="POST">
-                                <div class="form-group" >
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                                        </div>
+                        <img src="images/logo.png" class="w3-padding-32" width="65%" height="auto">
+                        <p class="w3-center" style="font-size: 18px">
+                            A card game to land your chimps on mars.
+                            <br>
+                            <b> Onboard with the mission?</b> &nbsp;Give us a heads-up!
+                        </p>
+                        <form style="padding: 20px;" class="w3-wide w3-center" target="_blank" action="https://formsubmit.co/chimpsonmarsgame@gmail.com" method="POST">
+                            <div class="form-group" >
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input style="width: 50%; background-color: antiquewhite; border-radius: 20px; border-color: whitesmoke;" type="email" name="email" class="form-control" placeholder="&emsp;Email Address" required>
                                     </div>
                                 </div>
+                            </div>
+                            <div style="min-height: 15px"></div>
 
-                                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-                            </form>
-                        </div>
+                            <button style="width: 25%; border-radius: 20px; border-color: whitesmoke; background-color: whitesmoke;" type="submit" class="btn btn-lg btn-dark btn-block"><b>Subscribe</b></button>
+                        </form>
                     </div>
                 </div>
             </div>
+
             <div class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off">
                 <div class="w3-xlarge w3-section">
-                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                    <i class="fa fa-instagram w3-hover-opacity"></i>
-                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <a href="https://www.facebook.com/Chimps-on-Mars-103011194911954" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>&emsp;
+                    <a href="https://instagram.com/chimps_on_mars?igshid=x8sy4o71vifn" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>&emsp;
+                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>&emsp;
+                    <a href="https://twitter.com/chimpsonmars?s=08" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
                 </div>
             </div>
         </div>
@@ -264,28 +259,7 @@
     <!-- Footer -->
 
 
-        <script>
-            // Modal Image Gallery
-            function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
-            }
 
-            // Change style of navbar on scroll
-
-
-            // Used to toggle the menu on small screens when clicking on the menu button
-            function toggleFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
 
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
     <head>
@@ -30,7 +30,7 @@
             }
 
             /* Create a Parallax Effect */
-            .bgimg-1, .bgimg-2, .bgimg-3 {
+            .bgimg-1 {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -43,24 +43,12 @@
                 min-height: 100%;
             }
 
-            /* Second image (Portfolio) */
-            .bgimg-2 {
-                background-image: url("images/random.jpg");
-                min-height: 400px;
-            }
-
-            /* Third image (Contact) */
-            .bgimg-3 {
-                background-image: url("images/random.jpg");
-                min-height: 400px;
-            }
-
             .w3-wide {letter-spacing: 10px;}
             .w3-hover-opacity {cursor: pointer;}
 
             /* Turn off parallax scrolling for tablets and phones */
             @media only screen and (max-device-width: 1600px) {
-                .bgimg-1, .bgimg-2, .bgimg-3 {
+                .bgimg-1 {
                     background-attachment: scroll;
                     min-height: 400px;
                 }
@@ -79,7 +67,7 @@
 
                 <a href="#home" class="w3-bar-item">
                     <div style="width: 30%; padding: 10px;" >
-                        <img src="images/logo.png" width= "100%">
+                        <img src="images/logo.png" width= "100%" alt="Chimps On Mars Logo">
                     </div>
                 </a>
             </div>
@@ -94,11 +82,11 @@
 
 
                 <div class="w3-row  w3-section">
-                    <div class="w3-col m6 w3-container" style="min-width: 0px">
+                    <div class="w3-col m6 w3-container" style="min-width: 0">
                     </div>
                     <div class="w3-col m6 w3-container" style="margin-left: 40%">
 
-                            <img src="images/front_page_text.png" height="auto" width="120%">
+                            <img src="images/front_page_text.png" height="auto" width="120%" alt="Godspeed Voyager">
                         </div>
 
                     </div>
@@ -106,7 +94,7 @@
 
 
             </div>
-        </div>
+
 
    <!-- Container (About Section)
         <div class="w3-content w3-container w3-padding-64" id="about">
@@ -234,7 +222,7 @@
             <div class="w3-center w3-padding-32">
                 <div class="w3-center w3-padding-64">
                     <div class="w3-center w3-padding-64">
-                        <img src="images/logo.png" class="w3-padding-32" width="65%" height="auto">
+                        <img src="images/logo.png" class="w3-padding-32" width="65%" height="auto" alt="Chimps On Mars Logo">
                         <p class="w3-center" style="font-size: 18px">
                             A card game to land your chimps on mars.
                             <br>
@@ -244,7 +232,9 @@
                             <div class="form-group" >
                                 <div class="form-row">
                                     <div class="col">
-                                        <input style="width: 75%; background-color: antiquewhite; border-radius: 20px; border-color: whitesmoke;" type="email" name="email" class="form-control" placeholder="&emsp;Email Address" required>
+                                        <label>
+                                            <input style="width: 75%; background-color: antiquewhite; border-radius: 20px; border-color: whitesmoke;" type="email" name="email" class="form-control" placeholder="&emsp;Email Address" required>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
